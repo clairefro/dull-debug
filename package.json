@@ -6,9 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf outputs && mkdir outputs",
-    "start": "npm run clean && node index.js"
+    "start": "npm run clean && node --experimental-strip-types index.js",
+    "jimp": "npm run clean && node jimp.js",
+    "q": "npm run clean && node quantize.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "asciify-image": "^0.1.10",
+    "compress-images": "^2.0.5",
+    "image-q": "^4.0.0",
+    "jimp": "^1.6.0"
+  }
 }
