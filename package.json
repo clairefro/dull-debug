@@ -1,0 +1,14 @@
+{
+  "name": "dull",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf outputs && mkdir outputs",
+    "start": "npm run clean && node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
